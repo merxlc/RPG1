@@ -107,6 +107,10 @@ namespace RPG1
                     player.gold += Convert.ToInt32(runtimeNode.InnerText);
                     Console.WriteLine("You gained [" + runtimeNode.InnerText + "] gold. You now have [" + player.gold + "].");
                     break;
+                case "item":
+                    Item gained_item = ItemDriver.Get_Item(runtimeNode.InnerText);
+                    player.inventory.Add(gained_item);
+                    break;
             }
         }
 
@@ -122,15 +126,6 @@ namespace RPG1
         public static void Run_Event(string eventName, Player player)
         {
             Run_Event_Obj(Get_Event(eventName), player);
-        }
-
-        static void Main(string[] args)
-        {
-            Generator MainGen = new Generator("Default", 0);
-            Player test_player = MainGen.player();
-            Run_Event("TEST_EVENT_1", test_player);
-            test_player.info();
-            Console.ReadLine();
         }
     }
 }

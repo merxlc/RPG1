@@ -26,6 +26,11 @@ namespace RPG1
             Console.WriteLine("====="+name+"=====");
             Console.WriteLine("EXP: " + exp);
             Console.WriteLine("gold: " + gold);
+            Console.WriteLine("==INVENTORY==");
+            foreach (Item ite in inventory)
+            {
+                ite.info();
+            }
         }
 
     }

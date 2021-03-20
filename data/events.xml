@@ -17,6 +17,7 @@
         <result id="option 1">
           <text>you picked option 1</text>
           <exp>100</exp>
+          <item>ITEM_1</item>
         </result>
         
       </choice>

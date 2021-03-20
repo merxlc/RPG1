@@ -47,11 +47,17 @@
     <Compile Include="EventDriver.cs" />
     <Compile Include="Generator.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="ItemDriver.cs" />
     <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\events.xml" />
+    <Content Include="data\items.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
