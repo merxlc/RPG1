@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPG1
 {
+
     class Item
     {
         public Dictionary<string, ItemAttribute> attributes;

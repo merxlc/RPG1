@@ -10,11 +10,23 @@ namespace RPG1
     {
         static void Main(string[] args)
         {
-            Generator MainGen = new Generator("Default", 0);
-            Player test_player = MainGen.player();
+            Runtime main = new Runtime();
+            Player test_player = main.stdGen.player();
+            main.defaultPlayer = test_player;
 
-            EventDriver.Run_Event("TEST_EVENT_1", test_player);
-            test_player.info();
+            //main.Run_Event("TEST_EVENT_1");
+            //test_player.info();
+
+            Dictionary<string, Map> maps = main.Get_Maps();
+            foreach (string mapkey in maps.Keys)
+            {
+                Map map = maps[mapkey];
+                map.info();
+                foreach (Location loc in map.locations)
+                {
+                    main.Run(loc, test_player);
+                }
+            }
 
             Console.ReadLine();
         }

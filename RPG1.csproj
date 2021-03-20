@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Location.cs" />
+    <Compile Include="LocationDriver.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="Runtime.cs" />
     <Compile Include="Event.cs" />
     <Compile Include="EventDriver.cs" />
     <Compile Include="Generator.cs" />
@@ -59,6 +63,7 @@
   <ItemGroup>
     <Content Include="data\events.xml" />
     <Content Include="data\items.xml" />
+    <Content Include="data\maps.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

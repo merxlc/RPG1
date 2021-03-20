@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<maps>
+  
+  <map name="MAP_1">
+    <name>Map 1</name>
+    <locations>
+      
+      <location name="LOCATION_1">
+        <name>Location 1</name>
+        <event>TEST_EVENT_1</event>
+        <x>10</x>
+        <y>10</y>
+      </location>
+
+      <location name="LOCATION_2">
+        <name>Location 2</name>
+        <event>TEST_EVENT_2</event>
+        <x>20</x>
+        <y>20</y>
+      </location>
+      
+    </locations>
+    
+  </map>
+  
+</maps>
