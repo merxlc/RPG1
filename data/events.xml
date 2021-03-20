@@ -1,0 +1,35 @@
+<events>
+  <event name="TEST_EVENT_1">
+    <name>Test Event 1</name>
+    <eventDriver>
+
+      <text>hello! 1</text>
+      
+      <dialogueBox>
+        <text>This is a dialogue box!</text>
+      </dialogueBox>
+
+      <choice>
+        
+        <option>option 1</option>
+        <option>option 2</option>
+        
+        <result id="option 1">
+          <text>you picked option 1</text>
+          <exp>100</exp>
+        </result>
+        
+      </choice>
+      
+    </eventDriver>
+  </event>
+  
+  <event name="TEST_EVENT_2">
+    <name>Test Event 2</name>
+    <eventDriver>
+
+      <text>hello! 2</text>
+
+    </eventDriver>
+  </event>
+</events>

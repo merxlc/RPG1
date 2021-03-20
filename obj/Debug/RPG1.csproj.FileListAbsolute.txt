@@ -1,0 +1,7 @@
+D:\C#\RPG1\RPG1\bin\Debug\RPG1.exe.config
+D:\C#\RPG1\RPG1\bin\Debug\RPG1.exe
+D:\C#\RPG1\RPG1\bin\Debug\RPG1.pdb
+D:\C#\RPG1\RPG1\obj\Debug\RPG1.csprojAssemblyReference.cache
+D:\C#\RPG1\RPG1\obj\Debug\RPG1.csproj.CoreCompileInputs.cache
+D:\C#\RPG1\RPG1\obj\Debug\RPG1.exe
+D:\C#\RPG1\RPG1\obj\Debug\RPG1.pdb
