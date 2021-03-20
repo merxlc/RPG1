@@ -47,6 +47,7 @@
     <Compile Include="EventDriver.cs" />
     <Compile Include="Generator.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="ItemAttribute.cs" />
     <Compile Include="ItemDriver.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />

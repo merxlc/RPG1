@@ -17,11 +17,11 @@ namespace RPG1
 
             foreach (XmlNode node in doc.DocumentElement.ChildNodes)
             {
-                Dictionary<string, string> attribs = new Dictionary<string, string>();
+                Dictionary<string, ItemAttribute> attribs = new Dictionary<string, ItemAttribute>();
                 string itemName = node.Attributes["name"]?.InnerText;
                 foreach (XmlNode itemNode in node)
                 {
-                    attribs.Add(itemNode.Name, itemNode.InnerText);
+                    attribs.Add(itemNode.Name, new ItemAttribute(itemNode.Name, itemNode.InnerText, itemNode.Attributes));
                 }
 
                 Item addedItem = new Item(attribs);

@@ -3,7 +3,7 @@
 
   <item name="ITEM_1">
     <name>Item 1</name>
-    <rarity>Mythical</rarity>
+    <rarity rarityclass="standard">Mythical</rarity>
   </item>
   
 </items>

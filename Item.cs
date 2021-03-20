@@ -8,16 +8,20 @@ namespace RPG1
 {
     class Item
     {
-        public Dictionary<string, string> attributes;
+        public Dictionary<string, ItemAttribute> attributes;
 
-        public Item(Dictionary<string, string> attribs)
+        public Item(Dictionary<string, ItemAttribute> attribs)
         {
             attributes = attribs;
         }
+
         public void info()
         {
-            Console.WriteLine("====="+attributes["name"]+"=====");
-            Console.WriteLine("Rarity: " + attributes["rarity"]);
+            Console.WriteLine("====="+attributes["name"].value+"=====");
+            foreach (string attr in attributes.Keys)
+            {
+                attributes[attr].info();
+            }
         }
     }
 }
