@@ -8,7 +8,7 @@ namespace RPG1
 {
     class Runtime
     {
-        public Generator stdGen = new Generator("Default", 0);
+        public Generator stdGen = new Generator("Default", 0, 20);
         public Player defaultPlayer;
 
         public Runtime(Player player, Generator gen)
@@ -16,7 +16,6 @@ namespace RPG1
             defaultPlayer = player;
             stdGen = gen;
         }
-
         public Runtime()
         {
             defaultPlayer = this.stdGen.player();
@@ -57,6 +56,30 @@ namespace RPG1
         public void Run(Location location, Player player)
         {
             location.run(player);
+        }
+        public Dictionary<string, Skill> Get_Skills()
+        {
+            return CombatDriver.Get_Skills();
+        }
+        public Skill Get_Skill(string name)
+        {
+            return CombatDriver.Get_Skill(name);
+        }
+        public float Get_Damage(Skill skill, int distance)
+        {
+            return CombatDriver.Get_Damage(skill, distance);
+        }
+        public List<float> Get_Damages(Skill skill, int start, int end)
+        {
+            List<float> damages = new List<float>();for (int i=start; i-1<end; i++){damages.Add(Get_Damage(skill, i));}return damages;
+        }
+        public Dictionary<string, CombatEncounter> Get_Encounters()
+        {
+            return CombatDriver.Get_Encounters();
+        }
+        public CombatEncounter Get_Encounter(string name)
+        {
+            return Get_Encounters()[name];
         }
     }
 }

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<encounters>
+  <encounter id="ENCOUNTER_1">
+    <name>Encounter 1</name>
+    <enemy>
+      <name>Enemy 1</name>
+      <skill>SLASH</skill>
+    </enemy>
+    <enemy>
+      <name>Enemy 2</name>
+      <skill>HEAL</skill>
+    </enemy>
+  </encounter>
+</encounters>

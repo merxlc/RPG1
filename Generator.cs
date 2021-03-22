@@ -9,22 +9,26 @@ namespace RPG1
     class Generator
     {
 
-        public static string defaultName = "Default";
-        public static int defaultNum = 0;
+        public string defaultName;
+        public int defaultSmall;
+        public int defaultLarge;
 
-        public Generator(string name, int num)
+        public Generator(string name, int small, int large)
         {
             defaultName = name;
-            defaultNum = num;
+            defaultSmall = small;
+            defaultLarge = large;
         }
 
         public Player player()
         {
             string name = defaultName;
             List<Item> inventory = new List<Item>();
-            int exp = defaultNum;
-            int gold = defaultNum;
-            return new Player(name, inventory, exp, gold);
+            List<Skill> skills = new List<Skill>();
+            int exp = defaultSmall;
+            int gold = defaultSmall;
+            int health = defaultLarge;
+            return new Player(name, inventory, exp, gold, skills, health);
         }
     }
 }
